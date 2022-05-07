@@ -1,12 +1,14 @@
 # nvdla_docker
-# pull images：
+# pull images
 docker pull caihuoqing/nvdla-docker:v1.0
-# run docker:
+# run docker
 docker run -it  -v $your-mount-path:/workspace caihuoqing/nvdla-docker:v1.0 /bin/bash
 # run nvdla simulator
   (based on qemu & tlm2.0)
 
 ./usr/local/nvdla/run-vp.sh
+usrname:root password:nvdla
+
 # rebuild linux image
 if you want to use yourself linux image, 
 Download the buildroot from https://buildroot.org/download.html
