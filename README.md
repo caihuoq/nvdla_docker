@@ -24,7 +24,10 @@ $ make menuconfig
 * Target Packages -> Networking applications -> openssh -> Y
 
 $make -j4
-then you can backup buildroot/output/linux-xxx/.config
-and replace buildroot/output/linux-xxx/ with your linux code
+
+# then you can backup buildroot/output/linux-xxx/.config
+# and replace buildroot/output/linux-xxx/ with your linux code
+
 $make linux-rebuild
+
 $make -j4
