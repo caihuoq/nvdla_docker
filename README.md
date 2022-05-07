@@ -7,7 +7,7 @@ docker run -it  -v $your-mount-path:/workspace caihuoqing/nvdla-docker:v1.0 /bin
   (based on qemu & tlm2.0)
 
 ./usr/local/nvdla/run-vp.sh
-
+# rebuild linux image
 if you want to use yourself linux image, 
 Download the buildroot from https://buildroot.org/download.html
 $ make qemu_aarch64_virt_defconfig
