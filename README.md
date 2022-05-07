@@ -3,7 +3,9 @@
 docker pull caihuoqing/nvdla-docker:v1.0
 # run docker:
 docker run -it  -v $your-mount-path:/workspace caihuoqing/nvdla-docker:v1.0 /bin/bash
-# then run nvdla simulator(based on qemu & tlm2.0)
+# run nvdla simulator
+  (based on qemu & tlm2.0)
+
 ./usr/local/nvdla/run-vp.sh
 
 if you want to use yourself linux image, 
@@ -25,8 +27,8 @@ $ make menuconfig
 
 $make -j4
 
-# then you can backup buildroot/output/linux-xxx/.config
-# and replace buildroot/output/linux-xxx/ with your linux code
+then you can backup buildroot/output/linux-xxx/.config
+and replace buildroot/output/linux-xxx/ with your linux code
 
 $make linux-rebuild
 
