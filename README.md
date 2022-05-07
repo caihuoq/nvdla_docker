@@ -22,6 +22,7 @@ $ make menuconfig
 * System configuration -> Root password -> nvdla
 * Target Packages -> Show packages that are also provided by busybox -> Y
 * Target Packages -> Networking applications -> openssh -> Y
+
 $make -j4
 then you can backup buildroot/output/linux-xxx/.config
 and replace buildroot/output/linux-xxx/ with your linux code
